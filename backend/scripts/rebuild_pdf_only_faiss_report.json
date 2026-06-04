@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-04-24T06:05:20",
+  "records_total": 3032,
+  "records_source_counts": {
+    "pdf": 728,
+    "csv": 2304
+  },
+  "pdf_records_used": 728,
+  "chunk_size": 900,
+  "chunk_overlap": 150,
+  "backend_runtime_embedding_model_setting": "BAAI/bge-small-en-v1.5",
+  "backend_effective_embedding_config": {
+    "model": "BAAI/bge-m3",
+    "device": "cpu",
+    "normalize": true,
+    "existing_index_dimension_before_rebuild": 1024
+  },
+  "data_preparation_embedding_config": {
+    "model": "BAAI/bge-m3",
+    "device": "cpu",
+    "normalize": true
+  },
+  "backup_dir": "C:\\Users\\USER\\Desktop\\CSI_AI_DrKaset\\backend\\data\\faiss_index.backup_20260424_053248",
+  "vectors_after_rebuild": 1645,
+  "preview_source_types": [
+    "pdf"
+  ],
+  "csv_present_in_preview": false
+}

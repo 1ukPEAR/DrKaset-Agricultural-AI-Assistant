@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+backend/venv/
+backend/venv_broken_py39/
+
+# Environment files
+.env
+*.env
+!.env.example
+!**/.env.example
+
+# Logs
+*.log
+
+# Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+backend/.env
+frontend/.env
+data_preparation/.env
+backend/data/faiss_index/
+backend/data/faiss_index.backup/
+backend/archive_cleanup_20260424/
+data_preparation/data/processed/
+data_preparation/data/chunks/
+data_preparation/data/embeddings/

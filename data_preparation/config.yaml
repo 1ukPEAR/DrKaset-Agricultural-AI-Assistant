@@ -1,0 +1,50 @@
+﻿# ============================================================
+# DrKaset — Data Preparation Config
+# ============================================================
+
+paths:
+  raw_dir:       "data/raw"
+  processed_dir: "data/processed"
+  faiss_dir:     "../backend/data/faiss_index"
+
+chunking:
+  chunk_size:    900
+  chunk_overlap: 150
+
+embedding:
+  model:     "BAAI/bge-m3"
+  device:    "cpu"
+  normalize: true
+
+retrieval:
+  top_k:         8
+  top_k_compare: 10
+
+llm:
+  model:       "qwen2.5:7b"
+  temperature: 0.2
+  base_url:    "http://localhost:11434"
+
+# 14 พืชเป้าหมาย
+target_crops:
+  - ข้าว
+  - ข้าวโพด
+  - มันสำปะหลัง
+  - อ้อย
+  - ยางพารา
+  - ปาล์มน้ำมัน
+  - สับปะรด
+  - ลำไย
+  - ทุเรียน
+  - มังคุด
+  - กล้วย
+  - มะพร้าว
+  - ถั่วเหลือง
+  - ถั่วเขียว
+
+input_files:
+  encodings:      ["utf-8", "utf-8-sig", "cp874", "tis-620", "windows-874"]
+  pdf_max_pages:  500
+  zip_max_depth:  3
+
+
