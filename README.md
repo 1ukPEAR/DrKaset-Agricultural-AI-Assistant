@@ -1,37 +1,36 @@
 # DrKaset Agricultural AI Assistant
 
-DrKaset is a full-stack agricultural assistant designed to help Thai farmers access agricultural information through a conversational interface.
+A full-stack agricultural AI assistant designed to help Thai farmers access agricultural information through a conversational interface.
 
 The system combines a React frontend, FastAPI backend, MySQL database, FAISS vector search, and Ollama-powered RAG to provide answers based on prepared agricultural reference documents.
 
-## Screenshots
+## Overview
 
-<p align="center">
-  <img src="docs/screenshots/app.png" alt="DrKaset application" width="800">
-  <br>
-  <img src="docs/screenshots/overview.png" alt="DrKaset project overview" width="800">
-</p>
+DrKaset is a web-based agricultural assistant that allows users to ask questions and access agricultural information through a conversational interface.
+
+The system integrates user authentication, chat history, agricultural document retrieval, weather information, and market price information into a single application.
 
 ## Features
 
-- User registration and authentication
-- Protected chat history
+- User registration, login, JWT refresh, and protected chat history
 - AI-powered agricultural question answering
 - RAG-based information retrieval from agricultural documents
 - Streaming chat responses
-- Chat sessions and message history
+- Chat session and message history stored in MySQL
 - Weather information
 - Agricultural market price information
-- Data preparation and document indexing pipeline
+- Backend health check
+- Data preparation pipeline for cleaning, chunking, embedding, and indexing agricultural documents
 
 ## Tech Stack
 
 | Layer | Technology |
 | --- | --- |
 | Frontend | React 18, Vite, Axios, React Router, React Markdown |
-| Backend | FastAPI, Python, SQLAlchemy |
+| Backend | FastAPI, Python, SQLAlchemy, Pydantic |
 | AI / RAG | Ollama, LangChain, Sentence Transformers, FAISS |
 | Database | MySQL |
+| Authentication | JWT, bcrypt |
 
 ## My Contribution
 
@@ -40,8 +39,9 @@ The system combines a React frontend, FastAPI backend, MySQL database, FAISS vec
 Worked as part of the development team with a focus on the web application.
 
 - Developed and worked with the React-based frontend
+- Worked with JavaScript and frontend application development
 - Integrated frontend functionality with backend APIs
-- Worked with application flow and user interface
+- Worked on the user interface and application flow
 - Participated in testing and system integration
 
 ## Project Structure
