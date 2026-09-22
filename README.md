@@ -6,11 +6,18 @@ The system combines a React frontend, FastAPI backend, MySQL database, FAISS vec
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/screenshots/app.png" alt="DrKaset application" width="800">
-  <br>
-  <img src="docs/screenshots/overview.png" alt="DrKaset project overview" width="800">
-</p>
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/screenshots/chat-interface.png" alt="DrKaset Chat Interface">
+      <p align="center"><b>Chat Interface</b></p>
+    </td>
+    <td width="50%">
+      <img src="docs/screenshots/system-status.png" alt="DrKaset System Status">
+      <p align="center"><b>System Status</b></p>
+    </td>
+  </tr>
+</table>
 
 ## Features
 
