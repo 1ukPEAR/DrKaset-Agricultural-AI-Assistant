@@ -1,45 +1,65 @@
 # DrKaset Agricultural AI Assistant
 
-A full-stack AI assistant designed to help Thai farmers access agricultural information through a conversational interface.
+DrKaset is a full-stack agricultural assistant designed to help Thai farmers access agricultural information through a conversational interface.
 
-## Overview
+The system combines a React frontend, FastAPI backend, MySQL database, FAISS vector search, and Ollama-powered RAG to provide answers based on prepared agricultural reference documents.
 
-DrKaset combines a React frontend, FastAPI backend, MySQL database, and RAG-based AI system to provide agricultural information from prepared reference documents.
+## Screenshots
 
-## Key Features
+<p align="center">
+  <img src="docs/screenshots/app.png" alt="DrKaset application" width="800">
+  <br>
+  <img src="docs/screenshots/overview.png" alt="DrKaset project overview" width="800">
+</p>
 
-- AI-powered agricultural question answering
-- RAG-based responses using agricultural documents
-- Conversational chat with chat history
+## Features
+
 - User registration and authentication
+- Protected chat history
+- AI-powered agricultural question answering
+- RAG-based information retrieval from agricultural documents
+- Streaming chat responses
+- Chat sessions and message history
 - Weather information
 - Agricultural market price information
+- Data preparation and document indexing pipeline
 
 ## Tech Stack
 
-| Category | Technologies |
-|----------|--------------|
-| Frontend | React, Vite, Axios, React Router |
+| Layer | Technology |
+| --- | --- |
+| Frontend | React 18, Vite, Axios, React Router, React Markdown |
 | Backend | FastAPI, Python, SQLAlchemy |
-| AI / RAG | Ollama, LangChain, FAISS, Sentence Transformers |
+| AI / RAG | Ollama, LangChain, Sentence Transformers, FAISS |
 | Database | MySQL |
 
 ## My Contribution
 
-**Frontend Development**
+### Web Application Development
 
-- Developed and integrated frontend features using React
-- Connected frontend components with backend APIs
-- Worked on the user interface and application flow
+Worked as part of the development team with a focus on the web application.
 
-> Update this section to match your actual contribution to the project.
+- Developed and worked with the React-based frontend
+- Integrated frontend functionality with backend APIs
+- Worked with application flow and user interface
+- Participated in testing and system integration
 
 ## Project Structure
 
 ```text
-DrKaset-Agricultural-AI-Assistant/
+CSI_AI_DrKaset/
 ├── backend/
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── api/
+│   ├── auth/
+│   ├── db/
+│   ├── rag/
+│   └── schemas/
 ├── frontend/
+│   └── src/
 ├── data_preparation/
-├── db/
-└── docs/
+└── db/
+    ├── init.sql
+    └── migrations/
