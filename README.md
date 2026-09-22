@@ -6,9 +6,9 @@ The system combines a React frontend, FastAPI backend, MySQL database, FAISS vec
 
 ## Overview
 
-DrKaset is a web-based agricultural assistant that allows users to ask questions and access agricultural information through a conversational interface.
+DrKaset is a web-based agricultural assistant developed to support Thai farmers in accessing agricultural information through an AI-powered conversational interface.
 
-The system integrates user authentication, chat history, agricultural document retrieval, weather information, and market price information into a single application.
+The system uses Retrieval-Augmented Generation (RAG) to retrieve relevant information from agricultural documents and provide context-based responses to user questions.
 
 ## Features
 
@@ -30,19 +30,18 @@ The system integrates user authentication, chat history, agricultural document r
 | Backend | FastAPI, Python, SQLAlchemy, Pydantic |
 | AI / RAG | Ollama, LangChain, Sentence Transformers, FAISS |
 | Database | MySQL |
-| Authentication | JWT, bcrypt |
+| Data Processing | Python, SQL |
 
 ## My Contribution
 
-### Web Application Development
+### Data Preparation & RAG
 
-Worked as part of the development team with a focus on the web application.
+Worked as part of the development team with a focus on data preparation and Retrieval-Augmented Generation (RAG).
 
-- Developed and worked with the React-based frontend
-- Worked with JavaScript and frontend application development
-- Integrated frontend functionality with backend APIs
-- Worked on the user interface and application flow
-- Participated in testing and system integration
+- Prepared and structured data for use in the AI system
+- Prepared and organized agricultural data for the RAG pipeline
+- Built and tested the RAG system using Google Colab
+- Experimented with information retrieval to support AI-generated responses
 
 ## Project Structure
 
